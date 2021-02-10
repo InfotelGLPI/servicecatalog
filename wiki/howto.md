@@ -7,7 +7,7 @@ Il s’agit de décrire les différentes fonctionnalités du plugin Catalogue de serv
 Le plugin catalogue de service permet de rediriger les utilisateurs vers une interface conviviale permettant de les orienter vers la bonne catégorisation de leur ticket.
 
 **Nouvelle interface pour l’utilisateur final :**
-![sc_interface_helpdesk.png](/uploads/service-catalog/sc_interface_helpdesk.png)
+![sc_interface_helpdesk.png](sc_interface_helpdesk.png)
 
 # Installation du plugin
 
