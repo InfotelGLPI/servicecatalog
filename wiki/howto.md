@@ -17,7 +17,7 @@ L’installation sur GLPI se fait en copiant ce dossier dans le répertoire « plugi
 
 Il faut ensuite se connecter sur l’interface de GLPI et aller dans l’interface des plugins « **Configuration > Plugins** ».
 
-![7 D 5734 Ad 1 F 340 F 5836617638481 F 1153](/uploads/service-catalog/7d5734ad1f340f5836617638481f1153.png "7 D 5734 Ad 1 F 340 F 5836617638481 F 1153")
+![7 D 5734 Ad 1 F 340 F 5836617638481 F 1153](7d5734ad1f340f5836617638481f1153.png)
 
 Ensuite appuyer sur le bouton « **Installer** » près du nom du plugin, puis « **Activer** ».
 
@@ -29,7 +29,7 @@ Différents droits sont à définir pour l’utilisation du plugin :
 
 Il suffit pour cela, d'aller dans le menu « **Administration > Profils** », de sélectionner le profil que l'on souhaite modifier, puis dans l'onglet « **Catalogue de service** » définir les options que l’on souhaite.
 
-![sc-profile-helpdesk.png](/uploads/service-catalog/sc-profile-helpdesk.png)
+![sc-profile-helpdesk.png](sc-profile-helpdesk.png)
 
 - **Catalogue de service** : cette partie sert pour la configuration du plugin, il est donc possible de refuser l’accès à la configuration du plugin ou de l’autoriser en précisant l’option « **Mettre à jour** », « **Créer** » et « **Purger** ».
 - **Liens utiles** : cette partie permet de donner les droits sur la configuration des liens utiles qui seront détaillés par la suite.
@@ -43,7 +43,7 @@ Il suffit pour cela, d'aller dans le menu « **Administration > Profils** », de s
 
 **Exemple de  droits à configurer pour un profil qui aura uniquement accès au catalogue de service depuis l'interface simplifiée :**
 
-![profile_user.png](/uploads/service-catalog/profile_user.png)
+![profile_user.png](profile_user.png)
 
 
 # Description de l'utilisation du plugin par l'utilisateur final / principe de fonctionnement
@@ -51,7 +51,7 @@ Il suffit pour cela, d'aller dans le menu « **Administration > Profils** », de s
 ## Choix du contexte
 
 Lorsqu'un utilisateur a la visibilité sur plusieurs entités, la première action est la sélection de l'entité de destination de création de ticket.
-![Sc Context](/uploads/service-catalog/sc-context.png "Sc Context")
+![Sc Context](sc-context.png "Sc Context")
 
 Dans l'interface suivante, une icône "Changer de contexte" permet de revenir à la sélection de l'entité
 
@@ -77,11 +77,11 @@ Une première interface permet de choisir l’action qu’il veut effectuer, certaine
 {.is-warning}
 
 **Interface pour le choix de l’action à effectuer :**
-![Sc Interface Helpdesk](/uploads/service-catalog/sc_interface_helpdesk.png "Sc Interface Helpdesk")
+![Sc Interface Helpdesk](sc_interface_helpdesk.png "Sc Interface Helpdesk")
 
 **Interface avec les plugins pour le choix de l’action :**
 
-![Sc Interface Helpdesk With Plugins](/uploads/service-catalog/sc_interface_helpdesk_with_plugins.png "Sc Interface Helpdesk With Plugins")
+![Sc Interface Helpdesk With Plugins](sc_interface_helpdesk_with_plugins.png "Sc Interface Helpdesk With Plugins")
 
 ## Choix de la catégorie
 
@@ -91,7 +91,7 @@ L’interface lui permet donc de naviguer dans l’ensemble de l’arborescence des ca
 
 **Interface de sélection de la catégorie :**
 
-![sc-wrapper.png](/uploads/service-catalog/sc-thumbnail.png)
+![sc-wrapper.png](sc-thumbnail.png)
 
 
 Lors de la sélection d’une catégorie, le détail de la catégorie apparait avec toutes les sous-catégories. Lors du choix de la catégorie, l’utilisateur sera alors redirigé vers la création de ticket.
@@ -105,7 +105,7 @@ Lors de la sélection d’une catégorie qui contient plusieurs sous-catégories, lor
 
 De plus, il aura accès à un moteur de recherche qui lui permettra de directement choisir la bonne catégorie de ticket ainsi qu’aux articles de la FAQ liés à la catégorie choisie.
 
-![Sc Interface Category](/uploads/service-catalog/sc_interface_category.png "Sc Interface Category")
+![Sc Interface Category](sc_interface_category.png "Sc Interface Category")
 
 ## Création du ticket
 
@@ -116,7 +116,7 @@ Si lors de la configuration du plugin, vous avez choisi « **Montrer les autres i
 Dans le cas contraire, seulement les champs obligatoires seront affichés par défaut, les champs restants seront visibles en cliquant sur « **Autres informations** ».
 
 **Création d’un ticket :**
-![Sc Create Ticket](/uploads/service-catalog/sc-create-ticket.png "Sc Create Ticket")
+![Sc Create Ticket](sc-create-ticket.png "Sc Create Ticket")
 
 ## Interface des liens utiles
 
@@ -124,7 +124,7 @@ Dans le cas contraire, seulement les champs obligatoires seront affichés par déf
 Si des liens sont visibles par un des groupes dont je fais partie, le bouton « **Liens utiles** » apparait sur la page d’accueil.
 
 **Page d’accueil avec le bouton « Liens utiles » :**
-![Links](/uploads/service-catalog/links.png "Links")
+![Links](links.png "Links")
 
 Lors de la sélection « **Liens utiles** », vous êtes redirigés vers l’ensemble des liens utiles qui sont présents.
 
@@ -134,12 +134,12 @@ Dans l’exemple ci-dessous, deux liens sont présents :
 -   SITE 2 qui est configuré avec une image comme on peut le voir dans l’image ci-dessous.
 
 **Liste des liens utiles :**
-![List Links](/uploads/service-catalog/list-links.png "List Links")
+![List Links](list-links.png "List Links")
 
 Lorsqu’un lien est configuré avec le paramètre « **Afficher sur la page d’accueil** », le lien sera visible au même niveau que le bouton « Liens utiles ».
 
 **Bouton avec redirection vers le site1 :**
-![Link 1](/uploads/service-catalog/link-1.png "Link 1")
+![Link 1](link-1.png "Link 1")
 
 
 # Configuration du plugin
@@ -152,7 +152,7 @@ Lorsqu’un lien est configuré avec le paramètre « **Afficher sur la page d’accuei
 
 ### Configuration de l'affichage
 
-![sc-setup-display.png](/uploads/service-catalog/sc-setup-display.png)
+![sc-setup-display.png](sc-setup-display.png)
 
 Il est possible de configurer l'affichage du catalogue de service selon plusieurs paramètres : 
 
@@ -160,24 +160,24 @@ Il est possible de configurer l'affichage du catalogue de service selon plusieur
 
 - **sly**
 
-![sc-sly-.png](/uploads/service-catalog/sly.png)
+![sc-sly-.png](sly.png)
 Possibilité de "slider" la liste sur les côtés.
 
 - **wrapper-sly**
 
-![sc-wrappersly.png](/uploads/service-catalog/wrappersly.png)
+![sc-wrappersly.png](wrappersly.png)
 
 - **wrapper**
 
-![sc-wrapper.png](/uploads/service-catalog/wrapper.png)
+![sc-wrapper.png](wrapper.png)
 
 - **thumbnail**
 
-![sc-wrapper.png](/uploads/service-catalog/sc-thumbnail.png)
+![sc-wrapper.png](sc-thumbnail.png)
 
 - **thumbnail_wrapper**
 
-![sc-wrapper.png](/uploads/service-catalog/sc-thumbnail-wrapper.png)
+![sc-wrapper.png](sc-thumbnail-wrapper.png)
 
 {.is-warning} 
 - **Couleur générale** : Il est possible de choisir la couleur principale de l'interface du catalogue de service.
@@ -203,7 +203,7 @@ Possibilité de "slider" la liste sur les côtés.
 
 ### Configuration du plugin
 
-![sc-setup-comment.png](/uploads/service-catalog/sc-setup-comment.png)
+![sc-setup-comment.png](sc-setup-comment.png)
 
 - **Activer les mots clés** : Il est possible d'afficher dans les vignettes des catégories les mots clés / commentaires prédéfinis, visible ou non pour l'utilisateur final et de les utiliser dans le moteur de recherche.
 - **Activer la restriction par groupe** : Il est possible de choisir si les groupes auront accès aux catégories enfants même si les parents de ces enfants leurs sont restreints.
@@ -215,11 +215,11 @@ Possibilité de "slider" la liste sur les côtés.
 
 Afin de guider l’utilisateur pour la création du ticket, différents commentaires sont à remplir dans cette configuration, ces commentaires permettent d’aiguiller l’utilisateur.
 
-![sc-dashboard-config.png](/uploads/service-catalog/sc-dashboard-config.png)
+![sc-dashboard-config.png](sc-dashboard-config.png)
 
 - **Niveau de catégories à afficher** : Il est possible de choisir dans les widgets listant les tickets en cours / à clore sur l'interface simplifiée le niveau de l'arborescence des catégories affichées : ici 2 (Parent > enfant) : 
 
-![levelcat.png](/uploads/service-catalog/levelcat.png)
+![levelcat.png](levelcat.png)
 
 - **Voir le top incidents / demandes** : Il est possible d'afficher ou non la liste des catégories les plus utilisées
 
@@ -230,18 +230,18 @@ Afin de guider l’utilisateur pour la création du ticket, différents commentaires
 
 ### Barre de recherche du plugin
 
-![sc-searchbar-config.png](/uploads/service-catalog/sc-searchbar-config.png)
+![sc-searchbar-config.png](sc-searchbar-config.png)
 
 Afin de guider l'utilisateur dans sa recherche, il est possible d'insérer un commentaire dans les barres de recherche pour aider l'utilisateur final.
 
-![sc-searchbar-exemple.png](/uploads/service-catalog/sc-searchbar-exemple.png) 
+![sc-searchbar-exemple.png](sc-searchbar-exemple.png) 
 
 
 ### Formulaire
 
 Il est possible de personnaliser certains labels du formulaire de création de ticket. 
 
-![sc-form-config.png](/uploads/service-catalog/sc-form-config.png)
+![sc-form-config.png](sc-form-config.png)
 
 - ~~**Plus utilisé - Remplacer le formulaire de création de ticket** : Il est possible de choisir si le plugin remplace le formulaire de création de ticket.~~
 - **Remplacer le formulaire de mise à jour de ticket** : Il est possible de choisir si le plugin remplace le formulaire de ticket standard de GLPI par celui du plugin.
@@ -250,7 +250,7 @@ Il est possible de personnaliser certains labels du formulaire de création de ti
 - **Titre de la liste déroulante des observateurs** : Il est possible de changer le titre de la liste déroulante des observateurs.
 - **Montrer le champ Numéro de téléphone à la création du ticket** : Il est possible d'afficher un champ permettant de choisi un numéro pour joindre l'utilisateur - les informations saisies seront ajoutées à la fin de la description du ticket.
 
-![telephone_form.png](/uploads/service-catalog/telephone_form.png)
+![telephone_form.png](telephone_form.png)
 
 - **Titre du champ Numéro de téléphone** : Permet de définir le titre du bloc Téléphone : dans l'exemple ci-dessus : "Comment vous joindre ?"
 
@@ -271,7 +271,7 @@ Il est possible de personnaliser certains labels du formulaire de création de ti
 
 ### Configuration pour la mise à jour des informations personnelles de l'utilisateur
 
-![sc-form-personal.png](/uploads/service-catalog/sc-form-personal.png)
+![sc-form-personal.png](sc-form-personal.png)
 
 > TODO Infotel - décrire l'option : Gabarit de ticket associé à la mise à jour des informations personnelles de l'utilisateur
 {.is-warning}
@@ -290,7 +290,7 @@ Si les informations personnelles ne sont plus d'actualités, cliquer sur "éditer"
 
 ## Onglet widgets
 
-![config_widgets.png](/uploads/service-catalog/config_widgets.png)
+![config_widgets.png](config_widgets.png)
 
 - **Widget de bienvenue** : Personnalisation du titre du message et du commentaire de bienvenue pour l'écran d'interface de création de ticket du service catalogue.
 
@@ -328,12 +328,12 @@ Si les informations personnelles ne sont plus d'actualités, cliquer sur "éditer"
 
 - **Widget de la base documentaire** : Personnalisation du titre, commentaire, l'image ou l'icone du widget de la base documentaire.
 
-![config_widget_incidents.png](/uploads/service-catalog/config_widget_incidents.png)
+![config_widget_incidents.png](config_widget_incidents.png)
 
 > Pour chaque widget, il est possible selon le widget de choisir si l'on souhaite afficher le bouton dans le menu d'interface de création de ticket de l'interface service catalogue, et  d'afficher l'icone sous forme de miniature raccourcie dans le menu supérieur
 {.is-info}
 
-![menu_superieur.png](/uploads/service-catalog/menu_superieur.png)
+![menu_superieur.png](menu_superieur.png)
 
 - **Afficher le bouton de création d'incident / d'une demande / de la liste des tickets / de la liste des incidents / de la liste des demandes** : Il est possible de choisir les différents boutons que l'on souhaite afficher sur l'interface centrale.
 
@@ -341,7 +341,7 @@ Si les informations personnelles ne sont plus d'actualités, cliquer sur "éditer"
 
 ## Onglet Ordonnancement des catégories de ticket
 
-![Sc Category Order](/uploads/service-catalog/sc-category-order.png "Sc Category Order")
+![Sc Category Order](sc-category-order.png "Sc Category Order")
 
 Par défaut lors de l’affichage des différentes catégories de niveau 1, les catégories sont triées sur le nom.
 
@@ -361,7 +361,7 @@ Lors de l’ajout de nouvelles catégories dans GLPI, pour ne pas perdre tout ordon
 
 ## Onglet Ordonnancement des champs de tickets
 
-![sc-orderingfields.png](/uploads/service-catalog/sc-orderingfields.png)
+![sc-orderingfields.png](sc-orderingfields.png)
 
 Par simple glisser/déposer, Il est possible d'ordonner les champs du formulaire de création de ticket. 
 
@@ -377,7 +377,7 @@ Par simple glisser/déposer, Il est possible d'ordonner les boutons présents dans
 
 Comme pour les différents intitulés de GLPI, il est possible de proposer une traduction pour les titres et commentaires du plugin.
 
-![Sc Setup Translate](/uploads/service-catalog/sc-setup-translate.png "Sc Setup Translate")
+![Sc Setup Translate](sc-setup-translate.png "Sc Setup Translate")
 
 ## Onglet Liens utiles
 
@@ -392,7 +392,7 @@ Lors de l’ajout d’un lien utile, ces champs sont présents :
 -   **Afficher sur la page d’accueil** : ce paramètre s’il est activé permet d’avoir ce raccourci sur la page d’accueil.
 -   **Commentaires** : informations complémentaires sur le lien qui est visible pour l’utilisateur final.
 
-![Sc Links](/uploads/service-catalog/sc_links.png "Sc Links")
+![Sc Links](sc_links.png "Sc Links")
 
 Il sera aussi possible de traduire les différents champs qui sont visibles pour l’utilisateur final, un onglet est dédié à cette configuration.
 
@@ -401,7 +401,7 @@ Pour limiter la visualisation de ces liens, un onglet « **Droit des groupes** » 
 Il est possible d’ajouter différents groupes qui seront autorisés à voir les liens. Seules les personnes qui feront partie de ces groupes verront le lien.
 
 **Configuration des groupes ayant accès au lien :**
-![Sc Setup Translate Group](/uploads/service-catalog/sc_setup_translate_group.png "Sc Setup Translate Group")
+![Sc Setup Translate Group](sc_setup_translate_group.png "Sc Setup Translate Group")
 
 
 # Configuration des entités
@@ -412,7 +412,7 @@ Il est possible d’ajouter différents groupes qui seront autorisés à voir les lie
 Pour chaque entité de GLPI, il sera possible d'ajouter un logo et des commentaires complémentaires.
 
 Ces informations seront visibles pour les utilisateurs lorsqu'ils devront choisir l'entité de destination du ticket.
-![Sc Entity](/uploads/service-catalog/sc-entity.png "Sc Entity")
+![Sc Entity](sc-entity.png "Sc Entity")
 
 > Il sera possible de définir des contacts pour l'entité. Ces contacts seront visibles dans un widget "Contactez-nous".
 {.is-info}
@@ -421,7 +421,7 @@ Ces informations seront visibles pour les utilisateurs lorsqu'ils devront choisi
 
 Il est possible de personnaliser la vue par défaut de l'utilisateur final et de choisir les widgets qui seront affichés.
 
-![Sc Dashboard Interface](/uploads/service-catalog/sc-dashboard-interface.png "Sc Dashboard Interface")
+![Sc Dashboard Interface](sc-dashboard-interface.png "Sc Dashboard Interface")
 
 **Différents widgets sont disponibles :**
 
@@ -455,7 +455,7 @@ Il est possible de personnaliser la vue par défaut de l'utilisateur final et de 
 
 ## Onglet Catalogue de service 
 
-![Sc Category Detail](/uploads/service-catalog/sc_category_detail.png "Sc Category Detail")
+![Sc Category Detail](sc_category_detail.png "Sc Category Detail")
 
 Pour chaque catégorie de GLPI, il sera possible d’ajouter un logo pour la représenter dans l’interface du catalogue de service.
 
@@ -475,7 +475,7 @@ Si l'on souhaite avoir des catégories accéssibles plus facilement dans l'interfa
 
 Après avoir séléctionné un profil (Administration->Profils) auquel vous voulez activer l'utilisation de favoris, une nouvelle ligne "Favoris" fait son apparition dans l'onglet Catalogue de service afin de gérer les droits d'accès, de modifications et de suppressions des favoris.
 
-![sc-favorites-add-rights.png](/uploads/service-catalog/sc-favorites-add-rights.png) 
+![sc-favorites-add-rights.png](sc-favorites-add-rights.png) 
 
 L'administrateur pourra choisir les favoris qu'il souhaite rendre accéssible à une entité, un groupe, profil ou utilisateur particulier (ou plusieurs des cas cités). 
 
@@ -484,7 +484,7 @@ puis choisir "catégories de ticket".
 
 Il faut séléctionner une catégorie qui n'est pas niveau 1 et se rendre dans l'onglet favoris.
 
-![sc-favorites-admin-add.png](/uploads/service-catalog/sc-favorites-admin-add.png)
+![sc-favorites-admin-add.png](sc-favorites-admin-add.png)
 
 La catégorie ITIL liée est celle ou l'on souhaite afficher le favori. La visibilité permet de choisir qui peut accèder aux favoris.
 
@@ -492,9 +492,9 @@ L'utilisateur pourra également choisir ses propres favoris en plus de ceux qui s
 
 Note : Il faut se placer dans les incidents ou les demandes pour voir apparaître le menu de gestion des favoris utilistaurs.
 
-![sc-nav-fav.png](/uploads/service-catalog/sc-nav-fav.png)
+![sc-nav-fav.png](sc-nav-fav.png)
 
-![sc-add-favorites-user.png](/uploads/service-catalog/sc-add-favorites-user.png)
+![sc-add-favorites-user.png](sc-add-favorites-user.png)
 
 Il pourra de la même manière choisir dans quelles catégories il souhaite les ajouter, supprimer ceux qu'il aura créé pour lui et les trier.
 
@@ -509,16 +509,16 @@ En plus des champs déjà présents dans l'interface simplifiée pour le formulaire 
 -   Demande de validation
 
 La configuration s'effectue dans un nouvel onglet dans chaque gabarit de ticket : 
-![Sc Tickettemplate](/uploads/service-catalog/sc-tickettemplate.png "Sc Tickettemplate")
+![Sc Tickettemplate](sc-tickettemplate.png "Sc Tickettemplate")
 
 Dans l'interface du ticket, les champs seront affichés de cette façon :
-![Sc Tickettemplate Ticket](/uploads/service-catalog/sc-tickettemplate-ticket.png "Sc Tickettemplate Ticket")
+![Sc Tickettemplate Ticket](sc-tickettemplate-ticket.png "Sc Tickettemplate Ticket")
 
 ## <a name="recategorisation"></a>Re-catégorisation 
 
 Cette fonctionnalité permet de proposer la re-catégorisation des tickets lors de leur édition coté interface complète – ceci afin de requalifier si besoin le ticket et de vérifier les catégories choisies par les utilisateurs.
 
-![52 B 077 Cafdd 78 B 3362385611 De 8 Cd 777](/uploads/service-catalog/52b077cafdd78b3362385611de8cd777.png "52 B 077 Cafdd 78 B 3362385611 De 8 Cd 777")
+![52 B 077 Cafdd 78 B 3362385611 De 8 Cd 777](52b077cafdd78b3362385611de8cd777.png "52 B 077 Cafdd 78 B 3362385611 De 8 Cd 777")
 
 Cette pop-up est affichée lors de la première consultation du ticket. Lors de la validation ou du changement de la catégorie via cette pop-up, la pop-up ne s’affichera pas lors des prochaines éditions du ticket.
 
