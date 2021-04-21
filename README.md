@@ -1,2 +1,1 @@
-HowTO
-https://github.com/InfotelGLPI/wiki_clients/blob/master/notices/noticepluginservicecatalog.md
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands.png "Plugin Service Catalog")
