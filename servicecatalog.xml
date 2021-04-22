@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <name>Service Catalog</name>
+    <key>servicecatalog</key>
+    <state>stable</state>
+    <logo>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/servicecatalog.png</logo>
+    <description>
+        <short>
+         <fr>But du plugin : rediriger les utilisateurs vers une interface conviviale permettant de les orienter vers la bonne catégorisation de leur ticket (à la manière d’un catalogue de service).</fr>
+         <en>Purpose of the plugin: Redirect users to a user-friendly interface allowing them to be directed towards the correct categorization of their ticket (like a service catalog).</en>
+      </short>
+      <long>
+         <fr>
+But du plugin : rediriger les utilisateurs vers une interface conviviale permettant de les orienter vers la bonne catégorisation de leur ticket (à la manière d’un catalogue de service).
+
+Fonctionnalités
+---------------
+
+- Accès à une page d'accueil / dashboard entièrement configurable ;
+- Affichage des alertes / maintenances planifiées / informations provenant du plugin Mydashboard ;
+- Affichage des catégories à la manière d'un catalogue de services (5 choix d'affichages possibles) ;
+- Configuration des commentaires associés aux types et catégories ;
+- Ordonnancement des catégories ;
+- Choix des logos / couleurs / description / mots clés / restrictions à associer aux catégories ;
+- Liaison possible avec le plugin Metademands / Formcreator pour la création de demandes complexes ;
+- Visibilité des liens avec les plugins Resources, Badges, Consumables,  si ceux-ci sont activés.
+
+         </fr>
+         <en>
+Purpose of the plugin: Redirect users to a user-friendly interface allowing them to be directed towards the correct categorization of their ticket (like a service catalog).
+
+Features
+--------
+- Access to a fully configurable home page / dashboard;
+- Display of alerts / scheduled maintenances / information from the Mydashboard plugin;
+- Display of categories in the manner of a service catalog (5 possible display choices);
+- Configuration of comments associated with types and categories;
+- Ordering of categories;
+- Choice of logos / colors / description / keywords / restrictions to associate with categories;
+- Possible link with the Metademands / Formcreator plugin for the creation of complex requests;
+- Visibility of the links with the Resources, Badges, Consumables plugins, if these are activated.
+         </en>
+      </long>
+    </description>
+    <homepage>https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/</homepage>
+    <download>https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/</download>
+    <issues>https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/</issues>
+    <readme>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/README.md</readme>
+    <authors>
+        <author>Xavier CAILLAUD</author>
+        <author>Infotel</author>
+    </authors>
+    <versions>
+        <version>
+            <num>1.7.8</num>
+            <compatibility>~9.5</compatibility>
+        </version>
+        <version>
+            <num>1.6.7</num>
+            <compatibility>~9.4</compatibility>
+        </version>
+    </versions>
+    <langs>
+        <lang>de_DE</lang>
+        <lang>en_GB</lang>
+        <lang>fr_FR</lang>
+    </langs>
+    <license><![CDATA[GPL v2+]]></license>
+    <tags>
+        <fr>
+            <tag>Catalogue de Services</tag>
+            <tag>Helpdesk</tag>
+            <tag>Interface</tag>
+        </fr>
+        <en>
+            <tag>Service Catalog</tag>
+            <tag>Helpdesk</tag>
+            <tag>Interface</tag>
+        </en>
+    </tags>
+    <screenshots>
+      <screenshot>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/NewNavBar-1024x678.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/thumbnail3-1024x546.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/newfaq-1024x430.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/mydashboard_navbar-1024x588.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands_navbar-1024x484.png</screenshot>
+   </screenshots>
+</root>
