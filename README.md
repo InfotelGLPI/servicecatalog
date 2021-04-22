@@ -17,7 +17,7 @@ Access to a Dashboard
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/dashboard.png "Plugin Service Catalog")
 
-Ticket catégories display
+Ticket catÃ©gories display
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
 
@@ -25,6 +25,6 @@ Incident creation form
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident_form.png "Plugin Service Catalog")
 
-Example to use with Metademands plugin
+Example to use with Metademands plugin 
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands.png "Plugin Service Catalog")
