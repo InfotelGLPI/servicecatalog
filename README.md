@@ -23,6 +23,8 @@ Visit https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
 
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident2.png "Plugin Service Catalog")
+
 ## Incident creation form
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident_form.png "Plugin Service Catalog")
