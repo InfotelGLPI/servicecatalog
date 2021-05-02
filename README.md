@@ -19,7 +19,7 @@ Visit https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/dashboard.png "Plugin Service Catalog")
 
-## Ticket catégories display
+## Ticket categories display
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
 
