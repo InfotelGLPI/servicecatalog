@@ -1,9 +1,3 @@
----
-title: Service Catalog
-layout: template
-filename: index
---- 
-
 # Plugin Service Catalog for GLPI
 
 Purpose of the plugin: Redirect users to a user-friendly interface allowing them to be directed towards the correct categorization of their ticket (like a service catalog).
