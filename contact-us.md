@@ -1,3 +1,9 @@
+---
+title: Contact Us
+layout: template
+filename: contact-us
+--- 
+
 # Nous contacter
 
 Notre pôle GLPI est basé à Rennes en France. Vous pouvez nous contacter pour toute sollicitation concernant nos activités GLPI :
