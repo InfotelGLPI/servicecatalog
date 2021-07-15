@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Plugin Service Catalog for GLPI
 
-You can use the [editor on GitHub](https://github.com/InfotelGLPI/servicecatalog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Purpose of the plugin: Redirect users to a user-friendly interface allowing them to be directed towards the correct categorization of their ticket (like a service catalog).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Characteristics :
 
-### Markdown
+- [X] Access to a fully configurable home page / dashboard
+- [X] Display of alerts / scheduled maintenances / information from the Mydashboard plugin
+- [X] Display of categories in the manner of a service catalog (5 possible display choices)
+- [X] Configuration of comments associated with types and categories
+- [X] Ordering of categories
+- [X] Choice of logos / colors / description / keywords / restrictions to associate with categories
+- [X] Possible link with the Metademands / Formcreator plugin for the creation of complex requests
+- [X] Visibility of the links with the Resources, Badges, Consumables plugins, if these are activated.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Visit https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/
 
-```markdown
-Syntax highlighted code block
+## Access to a Dashboard
 
-# Header 1
-## Header 2
-### Header 3
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/dashboard.png "Plugin Service Catalog")
 
-- Bulleted
-- List
+## Ticket categories display
 
-1. Numbered
-2. List
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
 
-**Bold** and _Italic_ and `Code` text
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident2.png "Plugin Service Catalog")
 
-[Link](url) and ![Image](src)
-```
+## Incident creation form
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident_form.png "Plugin Service Catalog")
 
-### Jekyll Themes
+## Example to use with Metademands plugin 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/InfotelGLPI/servicecatalog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands.png "Plugin Service Catalog")
