@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Contact us
 layout: template
 filename: contact-us
 --- 
