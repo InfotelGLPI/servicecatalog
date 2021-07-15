@@ -4,14 +4,14 @@ Purpose of the plugin: Redirect users to a user-friendly interface allowing them
 
 Characteristics :
 
-- [X] Access to a fully configurable home page / dashboard
-- [X] Display of alerts / scheduled maintenances / information from the Mydashboard plugin
-- [X] Display of categories in the manner of a service catalog (5 possible display choices)
-- [X] Configuration of comments associated with types and categories
-- [X] Ordering of categories
-- [X] Choice of logos / colors / description / keywords / restrictions to associate with categories
-- [X] Possible link with the Metademands / Formcreator plugin for the creation of complex requests
-- [X] Visibility of the links with the Resources, Badges, Consumables plugins, if these are activated.
+- Access to a fully configurable home page / dashboard
+- Display of alerts / scheduled maintenances / information from the Mydashboard plugin
+- Display of categories in the manner of a service catalog (5 possible display choices)
+- Configuration of comments associated with types and categories
+- Ordering of categories
+- Choice of logos / colors / description / keywords / restrictions to associate with categories
+- Possible link with the Metademands / Formcreator plugin for the creation of complex requests
+- Visibility of the links with the Resources, Badges, Consumables plugins, if these are activated.
 
 Visit https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/
 
