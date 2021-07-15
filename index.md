@@ -19,7 +19,7 @@ Characteristics :
 - Possible link with the Metademands / Formcreator plugin for the creation of complex requests
 - Visibility of the links with the Resources, Badges, Consumables plugins, if these are activated.
 
-Visit https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/
+Visit [https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/](https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/)
 
 ## Access to a Dashboard
 
