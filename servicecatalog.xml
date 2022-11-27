@@ -52,6 +52,10 @@ Features
     </authors>
     <versions>
         <version>
+            <num>2.0.5</num>
+            <compatibility>~10.0</compatibility>
+        </version>
+        <version>
             <num>2.0.4</num>
             <compatibility>~10.0</compatibility>
         </version>
