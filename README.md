@@ -17,18 +17,16 @@ Visit [https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/](https
 
 ## Access to a Dashboard
 
-![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/dashboard.png "Plugin Service Catalog")
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/NewNavBar-1024x678.png "Plugin Service Catalog")
 
 ## Ticket categories display
 
-![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
-
-![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident2.png "Plugin Service Catalog")
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/thumbnail3-1024x546.png "Plugin Service Catalog")
 
 ## Incident creation form
 
-![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident_form.png "Plugin Service Catalog")
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/create_incident.png "Plugin Service Catalog")
 
 ## Example to use with Metademands plugin 
 
-![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands.png "Plugin Service Catalog")
+![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands_navbar-1024x484.png "Plugin Service Catalog")
