@@ -52,6 +52,18 @@ Features
     </authors>
     <versions>
         <version>
+            <num>2.0.16</num>
+            <compatibility>~10.0</compatibility>
+        </version>
+        <version>
+            <num>2.0.15</num>
+            <compatibility>~10.0</compatibility>
+        </version>
+        <version>
+            <num>2.0.14</num>
+            <compatibility>~10.0</compatibility>
+        </version>
+        <version>
             <num>2.0.13</num>
             <compatibility>~10.0</compatibility>
         </version>
