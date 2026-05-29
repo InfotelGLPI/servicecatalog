@@ -31,38 +31,30 @@ Visit [https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/](https
 
 ![Plugin Service Catalog](https://raw.githubusercontent.com/InfotelGLPI/servicecatalog/master/screenshots/metademands_navbar-1024x484.png "Plugin Service Catalog")
 
-# Guide utilisateur — Plugin GLPI Service Catalog
+# Guide utilisateur â€” Plugin GLPI Service Catalog
 
-**Service Catalog** est un plugin GLPI qui remplace l'interface helpdesk standard par un portail utilisateur complet et personnalisable. Il propose la création de tickets par catégorie, le suivi des tickets, une base de connaissance, des liens utiles, des réservations, un annuaire de contacts, la gestion des équipements et un moteur de recherche fuzzy.
+**Service Catalog** est un plugin GLPI qui remplace l'interface helpdesk standard par un portail utilisateur complet et personnalisable. Il propose la crÃ©ation de tickets par catÃ©gorie, le suivi des tickets, une base de connaissance, des liens utiles, des rÃ©servations, un annuaire de contacts, la gestion des Ã©quipements et un moteur de recherche fuzzy.
 
 ---
 
-## 1. Présentation
+## 1. PrÃ©sentation
 
-### 1.1 Fonctionnalités principales
+### 1.1 FonctionnalitÃ©s principales
 
-- **Portail end-user** : interface simplifiée remplaçant la vue helpdesk GLPI, configurable par profil et par entité
-- **Création de tickets par catégorie** : arborescence ITIL enrichie avec images, icônes, couleurs, descriptions et mots-clés
+- **Portail end-user** : interface simplifiÃ©e remplaÃ§ant la vue helpdesk GLPI, configurable par profil et par entitÃ©
+- **CrÃ©ation de tickets par catÃ©gorie** : arborescence ITIL enrichie avec images, icÃ´nes, couleurs, descriptions et mots-clÃ©s
 - **Suivi des tickets** : vue chronologique (timeline), annulation, validation, ajout d'acteurs
-- **Base de connaissance** : FAQ intégrée avec recherche et liaison aux catégories
-- **Liens utiles** : liste de liens paramétrables avec visibilité par groupe
-- **Favoris** : catégories favorites par utilisateur, groupe ou profil
-- **Moteur de recherche fuzzy** (Fuse.js) : recherche sur catégories, articles FAQ et sources externes (Drupal, BookStack)
-- **Réservations** : réservation d'équipements avec génération optionnelle d'un ticket
+- **Base de connaissance** : FAQ intÃ©grÃ©e avec recherche et liaison aux catÃ©gories
+- **Liens utiles** : liste de liens paramÃ©trables avec visibilitÃ© par groupe
+- **Favoris** : catÃ©gories favorites par utilisateur, groupe ou profil
+- **Moteur de recherche fuzzy** (Fuse.js) : recherche sur catÃ©gories, articles FAQ et sources externes (Drupal, BookStack)
+- **RÃ©servations** : rÃ©servation d'Ã©quipements avec gÃ©nÃ©ration optionnelle d'un ticket
 - **Rendez-vous technicien** : planification d'un rendez-vous depuis la timeline d'un ticket
-- **Gestion des équipements** : liste des éléments de l'utilisateur (« Mes équipements »)
-- **Barre de navigation personnalisable** : menu latéral/haut configurable (titres, icônes, ordre)
+- **Gestion des Ã©quipements** : liste des Ã©lÃ©ments de l'utilisateur (Â« Mes Ã©quipements Â»)
+- **Barre de navigation personnalisable** : menu latÃ©ral/haut configurable (titres, icÃ´nes, ordre)
 - **Mise en page multi-layout** : 10 mises en page de tuiles disponibles
-- **Multi-entité** : configuration par entité (logo, en-tête, vue par défaut du portail)
+- **Multi-entitÃ©** : configuration par entitÃ© (logo, en-tÃªte, vue par dÃ©faut du portail)
 - **Traductions** : tous les champs configurables sont traduisibles par langue
-
-### 1.2 Compatibilité
-
-| Élément | Version |
-|---|---|
-| Plugin | 3.0.4 |
-| GLPI | 11.0.0 – 12.0.0 |
-| PHP | = 8.1 |
 
 ---
 
@@ -70,149 +62,149 @@ Visit [https://blogglpi.infotel.com/le-plugin-service-catalog-by-infotel/](https
 
 Chemin : `Administration > Profils > onglet Service catalog`
 
-### 2.1 Droits matriciels (LIRE / CRÉER / MODIFIER / PURGER)
+### 2.1 Droits matriciels (LIRE / CRÃ‰ER / MODIFIER / PURGER)
 
 | Droit | Objet | Description |
 |---|---|---|
-| `plugin_servicecatalog_setup` | Configuration, catégories, entités | Accès complet à l'administration du plugin |
-| `plugin_servicecatalog_links` | Liens utiles | Gérer les liens utiles affichés dans le portail |
+| `plugin_servicecatalog_setup` | Configuration, catÃ©gories, entitÃ©s | AccÃ¨s complet Ã  l'administration du plugin |
+| `plugin_servicecatalog_links` | Liens utiles | GÃ©rer les liens utiles affichÃ©s dans le portail |
 | `plugin_servicecatalog_appliancelinks` | Liens applicatifs | Associer des applications aux utilisateurs |
-| `plugin_servicecatalog_contacts` | Contacts | Gérer l'annuaire de contacts du portail |
-| `plugin_servicecatalog_myelements` | Mes équipements | Consulter la liste des équipements de l'utilisateur |
-| `plugin_servicecatalog_api` | Clients API | Gérer les clients API externes (Drupal, BookStack) |
-| `plugin_servicecatalog_favorites` | Favoris | Gérer les catégories favorites |
-| `plugin_servicecatalog_shortcuts` | Raccourcis | Créer des raccourcis dans le menu Outils |
-| `plugin_servicecatalog_defaultview` | Tableau de bord | Accès au tableau de bord du portail |
+| `plugin_servicecatalog_contacts` | Contacts | GÃ©rer l'annuaire de contacts du portail |
+| `plugin_servicecatalog_myelements` | Mes Ã©quipements | Consulter la liste des Ã©quipements de l'utilisateur |
+| `plugin_servicecatalog_api` | Clients API | GÃ©rer les clients API externes (Drupal, BookStack) |
+| `plugin_servicecatalog_favorites` | Favoris | GÃ©rer les catÃ©gories favorites |
+| `plugin_servicecatalog_shortcuts` | Raccourcis | CrÃ©er des raccourcis dans le menu Outils |
+| `plugin_servicecatalog_defaultview` | Tableau de bord | AccÃ¨s au tableau de bord du portail |
 
-### 2.2 Droits à case à cocher (activé / désactivé)
+### 2.2 Droits Ã  case Ã  cocher (activÃ© / dÃ©sactivÃ©)
 
 | Droit | Description |
 |---|---|
-| `plugin_servicecatalog` | Accéder au portail (droit d'usage principal) |
-| `plugin_servicecatalog_incidents` | Créer des tickets de type Incident |
-| `plugin_servicecatalog_requests` | Créer des tickets de type Demande |
-| `plugin_servicecatalog_add_actor` | Ajouter des acteurs à un ticket depuis le portail |
+| `plugin_servicecatalog` | AccÃ©der au portail (droit d'usage principal) |
+| `plugin_servicecatalog_incidents` | CrÃ©er des tickets de type Incident |
+| `plugin_servicecatalog_requests` | CrÃ©er des tickets de type Demande |
+| `plugin_servicecatalog_add_actor` | Ajouter des acteurs Ã  un ticket depuis le portail |
 | `plugin_servicecatalog_cancel_ticket` | Annuler son propre ticket |
 | `plugin_servicecatalog_ticket_appointment` | Planifier un rendez-vous depuis la timeline d'un ticket |
-| `plugin_servicecatalog_redirect_on_menu` | Rediriger vers le menu principal après création d'un ticket |
+| `plugin_servicecatalog_redirect_on_menu` | Rediriger vers le menu principal aprÃ¨s crÃ©ation d'un ticket |
 | `plugin_servicecatalog_hide_menu` | Masquer le menu GLPI standard pour ce profil |
-| `plugin_servicecatalog_checkticket` | Vérifier la validité de la catégorie avant création d'un ticket |
+| `plugin_servicecatalog_checkticket` | VÃ©rifier la validitÃ© de la catÃ©gorie avant crÃ©ation d'un ticket |
 
-> **Conseil** : attribuez `plugin_servicecatalog` à tous les profils helpdesk. Seuls les administrateurs ont besoin de `plugin_servicecatalog_setup`.
+> **Conseil** : attribuez `plugin_servicecatalog` Ã  tous les profils helpdesk. Seuls les administrateurs ont besoin de `plugin_servicecatalog_setup`.
 
 ---
 
 ## 3. Configuration globale
 
-Chemin : `Configuration > Plugins > Service catalog` (nécessite `plugin_servicecatalog_setup` MODIFIER)
+Chemin : `Configuration > Plugins > Service catalog` (nÃ©cessite `plugin_servicecatalog_setup` MODIFIER)
 
 ### 3.1 Onglets de configuration
 
 | Onglet | Contenu |
 |---|---|
-| **Configuration plugin** | Tous les paramètres globaux (accordéon) |
-| **Widgets** | Visibilité et personnalisation de chaque tuile du portail |
-| **Tableau de bord** | Vue par défaut du portail par entité et profil |
-| **Ordre du menu** | Glisser-déposer pour ordonner les éléments de la barre de navigation |
-| **Ordre des catégories** | Ordre d'affichage des catégories sur le portail |
-| **Ordre des champs** | Ordre des champs dans le formulaire de création de ticket |
+| **Configuration plugin** | Tous les paramÃ¨tres globaux (accordÃ©on) |
+| **Widgets** | VisibilitÃ© et personnalisation de chaque tuile du portail |
+| **Tableau de bord** | Vue par dÃ©faut du portail par entitÃ© et profil |
+| **Ordre du menu** | Glisser-dÃ©poser pour ordonner les Ã©lÃ©ments de la barre de navigation |
+| **Ordre des catÃ©gories** | Ordre d'affichage des catÃ©gories sur le portail |
+| **Ordre des champs** | Ordre des champs dans le formulaire de crÃ©ation de ticket |
 | **Ordre des boutons** | Ordre des boutons d'action dans le widget d'actions |
 | **Ordre des colonnes** | Colonnes et ordre dans les listes de tickets en mode tableau |
 | **Traductions** | Traduction de tous les champs configurables par langue |
-| **Liens utiles** | Liste des liens utiles affichés dans le portail |
+| **Liens utiles** | Liste des liens utiles affichÃ©s dans le portail |
 | **Clients API** | Sources externes (Drupal, BookStack) |
 | **Outils** | Outils de maintenance et de diagnostic |
-| **Vérification schéma** | Intégrité des tables de la base de données |
+| **VÃ©rification schÃ©ma** | IntÃ©gritÃ© des tables de la base de donnÃ©es |
 
 ---
 
 ### 3.2 Section : Affichage
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Layout des catégories | Mise en page des tuiles : `sly`, `wrapper`, `wrappersly`, `thumbnail`, `thumbnail_wrapper`, `bootstrapped`, `bootstrapped_color`, `shoper`, `circle`, `glpi11` |
-| Utiliser les couleurs du plugin | Couleurs personnalisées du plugin ou CSS du cœur GLPI |
-| Couleur générale | Couleur principale des tuiles |
+| Layout des catÃ©gories | Mise en page des tuiles : `sly`, `wrapper`, `wrappersly`, `thumbnail`, `thumbnail_wrapper`, `bootstrapped`, `bootstrapped_color`, `shoper`, `circle`, `glpi11` |
+| Utiliser les couleurs du plugin | Couleurs personnalisÃ©es du plugin ou CSS du cÅ“ur GLPI |
+| Couleur gÃ©nÃ©rale | Couleur principale des tuiles |
 | Couleur secondaire (survol) | Couleur au survol des tuiles |
 | Couleur de la barre de navigation | Fond de la barre de navigation |
-| Couleur de police des titres | Couleur du texte dans les en-têtes de tuiles |
-| Couleur de fond des titres | Fond des en-têtes de tuiles |
-| Forcer la couleur de fond du titre | Appliquer la couleur de fond même si la catégorie a sa propre couleur |
-| Taille des catégories | `Très petite`, `Petite`, `Normale` |
+| Couleur de police des titres | Couleur du texte dans les en-tÃªtes de tuiles |
+| Couleur de fond des titres | Fond des en-tÃªtes de tuiles |
+| Forcer la couleur de fond du titre | Appliquer la couleur de fond mÃªme si la catÃ©gorie a sa propre couleur |
+| Taille des catÃ©gories | `TrÃ¨s petite`, `Petite`, `Normale` |
 | Afficher la bordure | Bordure autour des tuiles |
 | Bords arrondis | Coins arrondis sur les bordures |
 | Masquer le menu helpdesk | Supprimer le menu de navigation helpdesk standard |
-| Masquer le menu haut | Supprimer la barre supérieure GLPI |
+| Masquer le menu haut | Supprimer la barre supÃ©rieure GLPI |
 | Rediriger le bouton accueil | Le logo GLPI renvoie vers le portail au lieu de la page d'accueil standard |
-| Masquer le sélecteur de langue | Supprimer le bouton de langue dans la barre helpdesk |
+| Masquer le sÃ©lecteur de langue | Supprimer le bouton de langue dans la barre helpdesk |
 | Masquer le bouton d'aide | Supprimer le bouton aide |
-| Masquer les recherches sauvegardées | Supprimer les recherches sauvegardées |
-| Masquer les préférences | Supprimer le bouton préférences de la barre |
-| Masquer le bouton de déconnexion | Supprimer le bouton de déconnexion de la barre |
-| Afficher les articles FAQ liés | Afficher les articles liés sur la page de détail d'une catégorie |
-| Afficher le lien de détail | Afficher un lien « détails » sur les tuiles de catégorie |
-| Afficher le logo dans les détails | Afficher le logo de la catégorie sur sa page de détail |
-| Afficher les indicateurs dans l'interface complète | Afficher les indicateurs du portail aux utilisateurs en interface centrale |
-| Icône par défaut des catégories | Icône de secours pour les catégories sans icône assignée |
-| Couleur par défaut des catégories | Couleur de secours pour les catégories sans couleur assignée |
+| Masquer les recherches sauvegardÃ©es | Supprimer les recherches sauvegardÃ©es |
+| Masquer les prÃ©fÃ©rences | Supprimer le bouton prÃ©fÃ©rences de la barre |
+| Masquer le bouton de dÃ©connexion | Supprimer le bouton de dÃ©connexion de la barre |
+| Afficher les articles FAQ liÃ©s | Afficher les articles liÃ©s sur la page de dÃ©tail d'une catÃ©gorie |
+| Afficher le lien de dÃ©tail | Afficher un lien Â« dÃ©tails Â» sur les tuiles de catÃ©gorie |
+| Afficher le logo dans les dÃ©tails | Afficher le logo de la catÃ©gorie sur sa page de dÃ©tail |
+| Afficher les indicateurs dans l'interface complÃ¨te | Afficher les indicateurs du portail aux utilisateurs en interface centrale |
+| IcÃ´ne par dÃ©faut des catÃ©gories | IcÃ´ne de secours pour les catÃ©gories sans icÃ´ne assignÃ©e |
+| Couleur par dÃ©faut des catÃ©gories | Couleur de secours pour les catÃ©gories sans couleur assignÃ©e |
 | Listes de tickets en tableau | Afficher les listes de tickets sous forme de tableau |
-| Colonnes utilisées | Colonnes affichées en mode tableau |
-| Icône par défaut des catégories mères | Icône de secours pour les catégories parentes |
-| Icône par défaut des catégories filles | Icône de secours pour les catégories enfants |
-| Nombre de lignes par défaut dans les listes | `3`, `5`, `10`, `25`, `50`, `100` |
+| Colonnes utilisÃ©es | Colonnes affichÃ©es en mode tableau |
+| IcÃ´ne par dÃ©faut des catÃ©gories mÃ¨res | IcÃ´ne de secours pour les catÃ©gories parentes |
+| IcÃ´ne par dÃ©faut des catÃ©gories filles | IcÃ´ne de secours pour les catÃ©gories enfants |
+| Nombre de lignes par dÃ©faut dans les listes | `3`, `5`, `10`, `25`, `50`, `100` |
 | Ajouter un bouton Retour | Afficher un bouton de navigation retour |
-| Désactiver le tableau de bord | `Activé` / `Désactivé ? liste incidents` / `Désactivé ? liste demandes` |
-| Lignes dans les tickets fermés | `30`, `100`, `200`, `300`, `400`, `Tous` |
-| Rediriger le logo vers la sélection d'entités | Cliquer sur le logo GLPI redirige vers la sélection d'entité |
-| Mode démo | Activer la barre de sélection de la démo |
+| DÃ©sactiver le tableau de bord | `ActivÃ©` / `DÃ©sactivÃ© ? liste incidents` / `DÃ©sactivÃ© ? liste demandes` |
+| Lignes dans les tickets fermÃ©s | `30`, `100`, `200`, `300`, `400`, `Tous` |
+| Rediriger le logo vers la sÃ©lection d'entitÃ©s | Cliquer sur le logo GLPI redirige vers la sÃ©lection d'entitÃ© |
+| Mode dÃ©mo | Activer la barre de sÃ©lection de la dÃ©mo |
 
 ---
 
 ### 3.3 Section : Plugin
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Activer les mots-clés | Recherche par mots-clés sur les catégories et articles FAQ |
-| Activer la restriction par groupe | Les catégories restreintes à des groupes appliquent cette restriction à leurs sous-catégories |
-| Récursivité de la restriction | La restriction de groupe s'applique aussi aux sous-groupes |
+| Activer les mots-clÃ©s | Recherche par mots-clÃ©s sur les catÃ©gories et articles FAQ |
+| Activer la restriction par groupe | Les catÃ©gories restreintes Ã  des groupes appliquent cette restriction Ã  leurs sous-catÃ©gories |
+| RÃ©cursivitÃ© de la restriction | La restriction de groupe s'applique aussi aux sous-groupes |
 
 ---
 
 ### 3.4 Section : Tableau de bord
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Titre de la page d'accueil | En-tête principal du portail |
+| Titre de la page d'accueil | En-tÃªte principal du portail |
 | Titre du widget d'actions | Titre de la tuile des actions rapides |
-| Titre de vos tickets ouverts | Label de la section « tickets en cours » |
-| Titre de vos incidents ouverts | Label de la section « incidents en cours » |
+| Titre de vos tickets ouverts | Label de la section Â« tickets en cours Â» |
+| Titre de vos incidents ouverts | Label de la section Â« incidents en cours Â» |
 | Titre de vos incidents + groupe | Label combinant incidents personnels et de groupe |
-| Titre de vos demandes ouvertes | Label de la section « demandes en cours » |
+| Titre de vos demandes ouvertes | Label de la section Â« demandes en cours Â» |
 | Titre de vos demandes + groupe | Label combinant demandes personnelles et de groupe |
-| Titre des tickets à clore | Label pour les tickets résolus en attente de clôture |
-| Titre des tickets à valider | Label pour les tickets en attente de validation |
-| Sélectionner catégorie incident | Placeholder du sélecteur de catégorie incident |
-| Sélectionner catégorie demande | Placeholder du sélecteur de catégorie demande |
-| Catégories favorites | Titre de la section favoris |
-| Articles FAQ liés | Label des articles liés à une catégorie |
-| Niveau de catégories à afficher | Profondeur de l'arborescence ITIL affichée sur le tableau de bord |
-| Afficher le Top incidents / Top demandes | Compteurs des catégories les plus utilisées |
-| Raison d'en attente pour les indicateurs | Raison d'en attente affichée dans le widget indicateurs (MyDashboard) |
+| Titre des tickets Ã  clore | Label pour les tickets rÃ©solus en attente de clÃ´ture |
+| Titre des tickets Ã  valider | Label pour les tickets en attente de validation |
+| SÃ©lectionner catÃ©gorie incident | Placeholder du sÃ©lecteur de catÃ©gorie incident |
+| SÃ©lectionner catÃ©gorie demande | Placeholder du sÃ©lecteur de catÃ©gorie demande |
+| CatÃ©gories favorites | Titre de la section favoris |
+| Articles FAQ liÃ©s | Label des articles liÃ©s Ã  une catÃ©gorie |
+| Niveau de catÃ©gories Ã  afficher | Profondeur de l'arborescence ITIL affichÃ©e sur le tableau de bord |
+| Afficher le Top incidents / Top demandes | Compteurs des catÃ©gories les plus utilisÃ©es |
+| Raison d'en attente pour les indicateurs | Raison d'en attente affichÃ©e dans le widget indicateurs (MyDashboard) |
 
 ---
 
 ### 3.5 Section : Barres de recherche
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Utiliser la barre de recherche intégrée | Remplacer la barre de recherche standard |
-| Afficher la barre de recherche intégrée | Afficher la barre sans la définir comme barre principale |
-| Maximiser la barre de recherche | Étendre la barre à la largeur complète |
+| Utiliser la barre de recherche intÃ©grÃ©e | Remplacer la barre de recherche standard |
+| Afficher la barre de recherche intÃ©grÃ©e | Afficher la barre sans la dÃ©finir comme barre principale |
+| Maximiser la barre de recherche | Ã‰tendre la barre Ã  la largeur complÃ¨te |
 | Recherche stricte | Correspondance exacte au lieu de fuzzy |
 | Afficher sur le tableau de bord | Afficher la barre sur la page principale |
-| Couleur recherche tickets | Couleur des résultats de type ticket |
-| Couleur recherche articles FAQ | Couleur des résultats de type article KB |
-| Couleur recherche API externe | Couleur des résultats provenant de Drupal/BookStack |
+| Couleur recherche tickets | Couleur des rÃ©sultats de type ticket |
+| Couleur recherche articles FAQ | Couleur des rÃ©sultats de type article KB |
+| Couleur recherche API externe | Couleur des rÃ©sultats provenant de Drupal/BookStack |
 | Titre barre incidents | Placeholder de la barre de recherche incidents |
 | Titre barre demandes | Placeholder de la barre de recherche demandes |
 | Titre barre articles FAQ | Placeholder de la barre de recherche articles |
@@ -221,186 +213,186 @@ Chemin : `Configuration > Plugins > Service catalog` (nécessite `plugin_servicec
 
 ### 3.6 Section : Barre de navigation
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Afficher la navigation entités plugin | Intégrer le plugin `entitiesnavigation` dans la barre |
-| Titre du menu principal | Label et icône du menu racine |
-| Titre du menu Accueil | Label de l'élément Accueil |
-| Titre du menu Tickets | Label générique tickets |
+| Afficher la navigation entitÃ©s plugin | IntÃ©grer le plugin `entitiesnavigation` dans la barre |
+| Titre du menu principal | Label et icÃ´ne du menu racine |
+| Titre du menu Accueil | Label de l'Ã©lÃ©ment Accueil |
+| Titre du menu Tickets | Label gÃ©nÃ©rique tickets |
 | Titre du menu Incidents | Label du sous-menu incidents |
 | Titre du menu Demandes | Label du sous-menu demandes |
-| Titre du menu Aide | Label et icône du menu aide |
-| Titre du menu Autres | Label et icône du menu divers |
-| Mes équipements | Afficher/masquer, label et icône de la rubrique équipements |
-| Mes applications | Afficher/masquer, label et icône de la rubrique applications |
-| Tickets fermés | Afficher/masquer, label et icône de la rubrique tickets fermés |
+| Titre du menu Aide | Label et icÃ´ne du menu aide |
+| Titre du menu Autres | Label et icÃ´ne du menu divers |
+| Mes Ã©quipements | Afficher/masquer, label et icÃ´ne de la rubrique Ã©quipements |
+| Mes applications | Afficher/masquer, label et icÃ´ne de la rubrique applications |
+| Tickets fermÃ©s | Afficher/masquer, label et icÃ´ne de la rubrique tickets fermÃ©s |
 
 ---
 
 ### 3.7 Section : Formulaire de ticket
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Ignorer la sélection de catégorie | Aller directement au formulaire sans passer par le sélecteur |
-| Titre de la sélection de catégorie | Label au-dessus du sélecteur |
-| Utiliser un assistant (wizard) | Formulaire en plusieurs étapes au lieu d'une page unique |
-| Couleur de fond du formulaire | Couleur de fond du formulaire de création |
-| Rediriger vers le détail avant création | Afficher la page de détail de la catégorie avant le formulaire |
-| Largeur du formulaire | Pourcentage de la largeur de la colonne (70–100 %) |
-| Modèle de ticket par défaut — Incident | Modèle appliqué à la création d'un incident |
-| Modèle de ticket par défaut — Demande | Modèle appliqué à la création d'une demande |
-| Titre de l'urgence | Label personnalisé du champ urgence |
+| Ignorer la sÃ©lection de catÃ©gorie | Aller directement au formulaire sans passer par le sÃ©lecteur |
+| Titre de la sÃ©lection de catÃ©gorie | Label au-dessus du sÃ©lecteur |
+| Utiliser un assistant (wizard) | Formulaire en plusieurs Ã©tapes au lieu d'une page unique |
+| Couleur de fond du formulaire | Couleur de fond du formulaire de crÃ©ation |
+| Rediriger vers le dÃ©tail avant crÃ©ation | Afficher la page de dÃ©tail de la catÃ©gorie avant le formulaire |
+| Largeur du formulaire | Pourcentage de la largeur de la colonne (70â€“100 %) |
+| ModÃ¨le de ticket par dÃ©faut â€” Incident | ModÃ¨le appliquÃ© Ã  la crÃ©ation d'un incident |
+| ModÃ¨le de ticket par dÃ©faut â€” Demande | ModÃ¨le appliquÃ© Ã  la crÃ©ation d'une demande |
+| Titre de l'urgence | Label personnalisÃ© du champ urgence |
 | Commentaire sur l'urgence | Texte d'aide sous le champ urgence |
-| Couleurs par niveau d'urgence | Couleur par niveau (1–5, filtrés par le masque GLPI) |
-| Titre de l'impact | Label personnalisé du champ impact |
+| Couleurs par niveau d'urgence | Couleur par niveau (1â€“5, filtrÃ©s par le masque GLPI) |
+| Titre de l'impact | Label personnalisÃ© du champ impact |
 | Commentaire sur l'impact | Texte d'aide sous le champ impact |
-| Couleurs par niveau d'impact | Couleur par niveau (1–5) |
-| Déployer « Plus d'informations » par défaut | Afficher le bloc additionnel déplié par défaut |
-| Titre de la section informations | Label de la section « autres informations » |
-| Champs dans le bloc informations | Champs affichés dans le bloc dépliable |
+| Couleurs par niveau d'impact | Couleur par niveau (1â€“5) |
+| DÃ©ployer Â« Plus d'informations Â» par dÃ©faut | Afficher le bloc additionnel dÃ©pliÃ© par dÃ©faut |
+| Titre de la section informations | Label de la section Â« autres informations Â» |
+| Champs dans le bloc informations | Champs affichÃ©s dans le bloc dÃ©pliable |
 | Autoriser l'ouverture pour d'autres utilisateurs | Ouvrir un ticket au nom d'un autre utilisateur |
-| Utilisateurs autorisés pour la délégation | Tous les utilisateurs ou uniquement ceux du même groupe |
-| Titre de la délégation | Label du sélecteur de délégation |
-| Ajouter le bénéficiaire comme observateur | Ajouter automatiquement l'utilisateur délégué en observateur |
-| Titre du menu préférences | Label de l'élément préférences dans la navigation |
+| Utilisateurs autorisÃ©s pour la dÃ©lÃ©gation | Tous les utilisateurs ou uniquement ceux du mÃªme groupe |
+| Titre de la dÃ©lÃ©gation | Label du sÃ©lecteur de dÃ©lÃ©gation |
+| Ajouter le bÃ©nÃ©ficiaire comme observateur | Ajouter automatiquement l'utilisateur dÃ©lÃ©guÃ© en observateur |
+| Titre du menu prÃ©fÃ©rences | Label de l'Ã©lÃ©ment prÃ©fÃ©rences dans la navigation |
 | Afficher le champ groupe demandeur | Ajouter un champ groupe demandeur dans le formulaire |
 | Titre du groupe demandeur | Label du champ groupe demandeur |
 | Titre des observateurs | Label du champ observateurs |
-| Titre de la date TTR | Label du champ Date de résolution souhaitée |
-| Titre de l'ajout de validation | Label du bouton « Demander une validation » |
-| Afficher les éléments liés avec icônes | Icônes de type d'équipement dans le sélecteur d'éléments liés |
-| Types d'éléments par défaut dans le formulaire | Types d'équipements GLPI disponibles dans le sélecteur |
-| Titre des éléments liés | Label du champ éléments liés |
+| Titre de la date TTR | Label du champ Date de rÃ©solution souhaitÃ©e |
+| Titre de l'ajout de validation | Label du bouton Â« Demander une validation Â» |
+| Afficher les Ã©lÃ©ments liÃ©s avec icÃ´nes | IcÃ´nes de type d'Ã©quipement dans le sÃ©lecteur d'Ã©lÃ©ments liÃ©s |
+| Types d'Ã©lÃ©ments par dÃ©faut dans le formulaire | Types d'Ã©quipements GLPI disponibles dans le sÃ©lecteur |
+| Titre des Ã©lÃ©ments liÃ©s | Label du champ Ã©lÃ©ments liÃ©s |
 | Titre de la localisation | Label du champ localisation |
-| Afficher le champ téléphone | Champ numéro de téléphone supplémentaire |
-| Titre du champ téléphone | Label du champ téléphone |
-| Téléphone obligatoire | Rendre le champ téléphone obligatoire |
-| Afficher les informations navigateur | Ajouter automatiquement les infos navigateur/client à la description |
+| Afficher le champ tÃ©lÃ©phone | Champ numÃ©ro de tÃ©lÃ©phone supplÃ©mentaire |
+| Titre du champ tÃ©lÃ©phone | Label du champ tÃ©lÃ©phone |
+| TÃ©lÃ©phone obligatoire | Rendre le champ tÃ©lÃ©phone obligatoire |
+| Afficher les informations navigateur | Ajouter automatiquement les infos navigateur/client Ã  la description |
 | Titre du ticket | Label du champ objet/titre du ticket |
 | Titre de la description | Label de la zone de description |
-| Placeholder de la description | Texte fantôme dans la zone de description |
-| Libellé du bouton de soumission | Texte personnalisé pour le bouton « Envoyer » |
-| Masquer le suivi par e-mail | Masquer la case « Me notifier par e-mail » |
+| Placeholder de la description | Texte fantÃ´me dans la zone de description |
+| LibellÃ© du bouton de soumission | Texte personnalisÃ© pour le bouton Â« Envoyer Â» |
+| Masquer le suivi par e-mail | Masquer la case Â« Me notifier par e-mail Â» |
 | Titre du suivi par e-mail | Label de la case de suivi |
-| Ajouter des demandeurs après création | Autoriser l'ajout de demandeurs sur un ticket existant |
-| Ajouter des observateurs après création | Autoriser l'ajout d'observateurs sur un ticket existant |
+| Ajouter des demandeurs aprÃ¨s crÃ©ation | Autoriser l'ajout de demandeurs sur un ticket existant |
+| Ajouter des observateurs aprÃ¨s crÃ©ation | Autoriser l'ajout d'observateurs sur un ticket existant |
 | Utilisateurs pour ajout acteurs | Tous les utilisateurs ou uniquement ceux des groupes |
-| Redirection vers sélection d'entité après création | Rediriger vers la sélection d'entité après création du ticket |
-| Redirection vers le ticket après création | Rediriger directement vers le ticket créé |
-| Utiliser l'onglet « Tous » par défaut | Afficher l'onglet « Tous » par défaut dans les listes de tickets |
-| Afficher les tickets liés | Afficher les tickets liés dans la timeline helpdesk |
+| Redirection vers sÃ©lection d'entitÃ© aprÃ¨s crÃ©ation | Rediriger vers la sÃ©lection d'entitÃ© aprÃ¨s crÃ©ation du ticket |
+| Redirection vers le ticket aprÃ¨s crÃ©ation | Rediriger directement vers le ticket crÃ©Ã© |
+| Utiliser l'onglet Â« Tous Â» par dÃ©faut | Afficher l'onglet Â« Tous Â» par dÃ©faut dans les listes de tickets |
+| Afficher les tickets liÃ©s | Afficher les tickets liÃ©s dans la timeline helpdesk |
 
 ---
 
-### 3.8 Section : Mise à jour des équipements
+### 3.8 Section : Mise Ã  jour des Ã©quipements
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Afficher le bouton de mise à jour | Bouton de demande de mise à jour sur la page « Mes équipements » |
-| Modèle de ticket pour mise à jour | Modèle appliqué à la demande de mise à jour d'équipement |
+| Afficher le bouton de mise Ã  jour | Bouton de demande de mise Ã  jour sur la page Â« Mes Ã©quipements Â» |
+| ModÃ¨le de ticket pour mise Ã  jour | ModÃ¨le appliquÃ© Ã  la demande de mise Ã  jour d'Ã©quipement |
 
 ---
 
-### 3.9 Section : Mise à jour du profil utilisateur
+### 3.9 Section : Mise Ã  jour du profil utilisateur
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Utiliser le formulaire de préférences du plugin | Remplacer les préférences GLPI par la page du plugin |
-| Modèle de ticket pour la mise à jour | Modèle utilisé pour la demande de mise à jour des informations personnelles |
+| Utiliser le formulaire de prÃ©fÃ©rences du plugin | Remplacer les prÃ©fÃ©rences GLPI par la page du plugin |
+| ModÃ¨le de ticket pour la mise Ã  jour | ModÃ¨le utilisÃ© pour la demande de mise Ã  jour des informations personnelles |
 
 ---
 
 ### 3.10 Section : Annulation de ticket
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Modèle de solution pour l'annulation | Modèle de solution appliqué lors de l'annulation d'un ticket par l'utilisateur |
+| ModÃ¨le de solution pour l'annulation | ModÃ¨le de solution appliquÃ© lors de l'annulation d'un ticket par l'utilisateur |
 
 ---
 
-### 3.11 Section : Réservations
+### 3.11 Section : RÃ©servations
 
-| Paramètre | Description |
+| ParamÃ¨tre | Description |
 |---|---|
-| Créer une demande à la réservation | Générer automatiquement un ticket lors d'une réservation |
-| Modèle de ticket pour réservation | Modèle appliqué au ticket de réservation |
+| CrÃ©er une demande Ã  la rÃ©servation | GÃ©nÃ©rer automatiquement un ticket lors d'une rÃ©servation |
+| ModÃ¨le de ticket pour rÃ©servation | ModÃ¨le appliquÃ© au ticket de rÃ©servation |
 
 ---
 
 ## 4. Configuration des widgets (onglet Widgets)
 
-Chaque widget correspond à une tuile ou une section du portail. Chaque widget dispose des options suivantes :
+Chaque widget correspond Ã  une tuile ou une section du portail. Chaque widget dispose des options suivantes :
 
-| Sous-paramètre | Description |
+| Sous-paramÃ¨tre | Description |
 |---|---|
-| Afficher dans la barre de navigation | La tuile apparaît dans le menu de navigation |
-| Afficher dans le menu haut | La tuile apparaît comme raccourci dans la barre supérieure |
-| Afficher dans le widget d'actions | La tuile apparaît dans les actions rapides de la page d'accueil |
-| Titre | Label personnalisé de la tuile |
-| Commentaire | Description affichée sous le titre (texte enrichi pour la plupart) |
-| Image | Image uploadée pour l'icône de la tuile |
-| Icône | Sélecteur d'icône FontAwesome / Tabler |
+| Afficher dans la barre de navigation | La tuile apparaÃ®t dans le menu de navigation |
+| Afficher dans le menu haut | La tuile apparaÃ®t comme raccourci dans la barre supÃ©rieure |
+| Afficher dans le widget d'actions | La tuile apparaÃ®t dans les actions rapides de la page d'accueil |
+| Titre | Label personnalisÃ© de la tuile |
+| Commentaire | Description affichÃ©e sous le titre (texte enrichi pour la plupart) |
+| Image | Image uploadÃ©e pour l'icÃ´ne de la tuile |
+| IcÃ´ne | SÃ©lecteur d'icÃ´ne FontAwesome / Tabler |
 
 **Widgets configurables :**
 
 | Widget | Barre de navigation | Menu haut | Widget actions |
 |---|---------------------|---|---|
-| Message de bienvenue | —                   | — | — |
-| Créer un incident | Oui                 | Oui | Oui |
-| Créer une demande | Oui                 | Oui | Oui |
-| Liste des tickets | Oui                 | — | — |
-| Liste des incidents | Oui                 | — | — |
-| Liste des demandes | Oui                 | — | — |
-| FAQ / Base de connaissance | —                   | Oui | — |
-| Validation de tickets | —                   | — | — |
-| Préférences utilisateur | Oui                 | — | — |
-| Liens utiles | Oui                 | Oui | — |
-| Réservations | —                   | — | — |
+| Message de bienvenue | â€”                   | â€” | â€” |
+| CrÃ©er un incident | Oui                 | Oui | Oui |
+| CrÃ©er une demande | Oui                 | Oui | Oui |
+| Liste des tickets | Oui                 | â€” | â€” |
+| Liste des incidents | Oui                 | â€” | â€” |
+| Liste des demandes | Oui                 | â€” | â€” |
+| FAQ / Base de connaissance | â€”                   | Oui | â€” |
+| Validation de tickets | â€”                   | â€” | â€” |
+| PrÃ©fÃ©rences utilisateur | Oui                 | â€” | â€” |
+| Liens utiles | Oui                 | Oui | â€” |
+| RÃ©servations | â€”                   | â€” | â€” |
 
-**Options supplémentaires :**
+**Options supplÃ©mentaires :**
 
-- **Mes équipements** : sélection multiple des états GLPI à exclure de la liste
+- **Mes Ã©quipements** : sÃ©lection multiple des Ã©tats GLPI Ã  exclure de la liste
 - **Widget Favoris** : afficher les favoris dans le menu haut
-- **Widget Contextes** : afficher le nom complet de l'entité, titre et commentaire de la liste d'entités, titre du sélecteur de contexte ticket
+- **Widget Contextes** : afficher le nom complet de l'entitÃ©, titre et commentaire de la liste d'entitÃ©s, titre du sÃ©lecteur de contexte ticket
 
 ---
 
-## 5. Gestion des catégories ITIL
+## 5. Gestion des catÃ©gories ITIL
 
-Le plugin ajoute un onglet **Service catalog** sur chaque fiche de catégorie ITIL.
+Le plugin ajoute un onglet **Service catalog** sur chaque fiche de catÃ©gorie ITIL.
 
-Chemin : `Assistance > Catégories ITIL > [Catégorie] > onglet Service catalog`
+Chemin : `Assistance > CatÃ©gories ITIL > [CatÃ©gorie] > onglet Service catalog`
 
-### 5.1 Champs par catégorie
+### 5.1 Champs par catÃ©gorie
 
 | Champ | Description |
 |---|---|
-| Hériter la configuration parente | Reprendre les paramètres de la catégorie parente (par défaut : oui) |
-| Hériter l'image parente | Reprendre l'image de la catégorie parente |
-| Hériter le détail parent | Reprendre le contenu de la page de détail |
-| Hériter l'alerte parente | Reprendre le texte d'alerte parent |
-| Hériter les types d'éléments parents | Reprendre les types d'équipements du parent |
-| Image | Image de la tuile de catégorie |
-| Icône | Icône FontAwesome / Tabler |
+| HÃ©riter la configuration parente | Reprendre les paramÃ¨tres de la catÃ©gorie parente (par dÃ©faut : oui) |
+| HÃ©riter l'image parente | Reprendre l'image de la catÃ©gorie parente |
+| HÃ©riter le dÃ©tail parent | Reprendre le contenu de la page de dÃ©tail |
+| HÃ©riter l'alerte parente | Reprendre le texte d'alerte parent |
+| HÃ©riter les types d'Ã©lÃ©ments parents | Reprendre les types d'Ã©quipements du parent |
+| Image | Image de la tuile de catÃ©gorie |
+| IcÃ´ne | IcÃ´ne FontAwesome / Tabler |
 | Couleur | Couleur de la tuile |
-| Contenu de la page de détail | Texte enrichi affiché avant la création du ticket |
-| Texte d'alerte | Message d'avertissement affiché sur la tuile |
-| Types d'équipements applicables | Types GLPI disponibles dans le formulaire pour cette catégorie |
-| Restriction par groupe | Groupes autorisés à voir et utiliser cette catégorie |
-| Nom simplifié incident | Label alternatif en mode incident |
-| Nom simplifié demande | Label alternatif en mode demande |
+| Contenu de la page de dÃ©tail | Texte enrichi affichÃ© avant la crÃ©ation du ticket |
+| Texte d'alerte | Message d'avertissement affichÃ© sur la tuile |
+| Types d'Ã©quipements applicables | Types GLPI disponibles dans le formulaire pour cette catÃ©gorie |
+| Restriction par groupe | Groupes autorisÃ©s Ã  voir et utiliser cette catÃ©gorie |
+| Nom simplifiÃ© incident | Label alternatif en mode incident |
+| Nom simplifiÃ© demande | Label alternatif en mode demande |
 
-### 5.2 Sous-onglets de catégorie
+### 5.2 Sous-onglets de catÃ©gorie
 
 | Onglet | Contenu |
 |---|---|
 | **Traductions** | Traduire les champs texte par langue |
-| **Mots-clés** | Mots-clés de recherche associés à la catégorie |
-| **Favoris** | Gérer les favoris liés à cette catégorie (nécessite `plugin_servicecatalog_favorites`) |
+| **Mots-clÃ©s** | Mots-clÃ©s de recherche associÃ©s Ã  la catÃ©gorie |
+| **Favoris** | GÃ©rer les favoris liÃ©s Ã  cette catÃ©gorie (nÃ©cessite `plugin_servicecatalog_favorites`) |
 
-### 5.3 Ordre des catégories
+### 5.3 Ordre des catÃ©gories
 
-L'onglet **Ordre des catégories** dans la configuration globale permet de réordonner les catégories par glisser-déposer, par type de ticket (incident / demande) et par niveau.
+L'onglet **Ordre des catÃ©gories** dans la configuration globale permet de rÃ©ordonner les catÃ©gories par glisser-dÃ©poser, par type de ticket (incident / demande) et par niveau.
 
 ---
 
@@ -409,67 +401,67 @@ L'onglet **Ordre des catégories** dans la configuration globale permet de réordo
 ### 6.1 Page d'accueil
 
 La page d'accueil du portail (`main.form.php`) affiche :
-- Le **widget d'actions rapides** (créer incident, créer demande, liens utiles, etc.)
-- Les **catégories ITIL** organisées en tuiles selon la mise en page choisie
-- Les **tickets ouverts** de l'utilisateur (incidents, demandes, tickets à valider, à clore)
+- Le **widget d'actions rapides** (crÃ©er incident, crÃ©er demande, liens utiles, etc.)
+- Les **catÃ©gories ITIL** organisÃ©es en tuiles selon la mise en page choisie
+- Les **tickets ouverts** de l'utilisateur (incidents, demandes, tickets Ã  valider, Ã  clore)
 - Les **favoris** de l'utilisateur
-- La **barre de recherche fuzzy** (si activée)
-- Les **indicateurs MyDashboard** (si le plugin mydashboard est actif et l'option activée)
+- La **barre de recherche fuzzy** (si activÃ©e)
+- Les **indicateurs MyDashboard** (si le plugin mydashboard est actif et l'option activÃ©e)
 
-> **Note** : la mise en page et les sections visibles dépendent des droits du profil et des paramètres de configuration.
+> **Note** : la mise en page et les sections visibles dÃ©pendent des droits du profil et des paramÃ¨tres de configuration.
 
-### 6.2 Création de ticket
+### 6.2 CrÃ©ation de ticket
 
-Chemin de création :
+Chemin de crÃ©ation :
 
-1. **Sélection de la catégorie** (`choosecategory.form.php`) — arborescence ITIL enrichie
-2. *(Optionnel)* **Page de détail** (`categorydetail.form.php`) — contenu riche, alerte, articles FAQ liés
-3. **Formulaire de ticket** (`newticket.form.php`) — formulaire complet ou assistant (wizard)
+1. **SÃ©lection de la catÃ©gorie** (`choosecategory.form.php`) â€” arborescence ITIL enrichie
+2. *(Optionnel)* **Page de dÃ©tail** (`categorydetail.form.php`) â€” contenu riche, alerte, articles FAQ liÃ©s
+3. **Formulaire de ticket** (`newticket.form.php`) â€” formulaire complet ou assistant (wizard)
 
 Options du formulaire :
-- Champs configurables : objet, description, urgence, impact, localisation, groupe demandeur, observateurs, éléments liés, téléphone, date TTR, demande de validation
-- Mode délégation : ouvrir un ticket au nom d'un autre utilisateur
-- Bloc « Plus d'informations » dépliable
+- Champs configurables : objet, description, urgence, impact, localisation, groupe demandeur, observateurs, Ã©lÃ©ments liÃ©s, tÃ©lÃ©phone, date TTR, demande de validation
+- Mode dÃ©lÃ©gation : ouvrir un ticket au nom d'un autre utilisateur
+- Bloc Â« Plus d'informations Â» dÃ©pliable
 - Ajout automatique des informations navigateur
-- Redirection après création : vers le ticket, vers la sélection d'entité, ou vers le menu principal
+- Redirection aprÃ¨s crÃ©ation : vers le ticket, vers la sÃ©lection d'entitÃ©, ou vers le menu principal
 
 ### 6.3 Suivi des tickets
 
 Page de ticket (`ticket.form.php`) :
-- **Timeline** : suivi des followups, tâches, solutions, validations
-- **Annulation** : bouton disponible si le droit `plugin_servicecatalog_cancel_ticket` est attribué, le ticket n'est pas résolu et n'a pas de followup/tâche
-- **Ajout d'acteurs** : demandeurs et observateurs si les droits correspondants sont attribués
-- **Tickets liés** : affichés si l'option est activée
-- **Rendez-vous** : planification avec un technicien si le droit `plugin_servicecatalog_ticket_appointment` est attribué
+- **Timeline** : suivi des followups, tÃ¢ches, solutions, validations
+- **Annulation** : bouton disponible si le droit `plugin_servicecatalog_cancel_ticket` est attribuÃ©, le ticket n'est pas rÃ©solu et n'a pas de followup/tÃ¢che
+- **Ajout d'acteurs** : demandeurs et observateurs si les droits correspondants sont attribuÃ©s
+- **Tickets liÃ©s** : affichÃ©s si l'option est activÃ©e
+- **Rendez-vous** : planification avec un technicien si le droit `plugin_servicecatalog_ticket_appointment` est attribuÃ©
 
 Listes de tickets :
 - Incidents ouverts / demandes ouvertes / tous les tickets
-- Tickets à valider, résolus, fermés
+- Tickets Ã  valider, rÃ©solus, fermÃ©s
 - Mode tableau configurable (colonnes, nombre de lignes)
 
 ### 6.4 FAQ / Base de connaissance
 
-Page `faq.php` — affiche les articles de la base de connaissance GLPI. Les articles peuvent être liés à des catégories ITIL pour apparaître sur la page de détail de la catégorie. La recherche fuzzy inclut les articles FAQ.
+Page `faq.php` â€” affiche les articles de la base de connaissance GLPI. Les articles peuvent Ãªtre liÃ©s Ã  des catÃ©gories ITIL pour apparaÃ®tre sur la page de dÃ©tail de la catÃ©gorie. La recherche fuzzy inclut les articles FAQ.
 
 ### 6.5 Liens utiles
 
-Page `link.php` — liste des liens configurés par l'administrateur. La visibilité peut être limitée par groupe (`Linkgroup`). Les liens peuvent apparaître dans la barre de navigation ou sur la page d'accueil.
+Page `link.php` â€” liste des liens configurÃ©s par l'administrateur. La visibilitÃ© peut Ãªtre limitÃ©e par groupe (`Linkgroup`). Les liens peuvent apparaÃ®tre dans la barre de navigation ou sur la page d'accueil.
 
-### 6.6 Réservations
+### 6.6 RÃ©servations
 
-Page `reservation.php` — consultation et réservation d'équipements GLPI. La création d'une réservation peut déclencher automatiquement la création d'un ticket si l'option est activée.
+Page `reservation.php` â€” consultation et rÃ©servation d'Ã©quipements GLPI. La crÃ©ation d'une rÃ©servation peut dÃ©clencher automatiquement la crÃ©ation d'un ticket si l'option est activÃ©e.
 
-### 6.7 Mes équipements
+### 6.7 Mes Ã©quipements
 
-Page `usercard.php` — liste des équipements GLPI assignés à l'utilisateur. Un bouton « Demander une mise à jour » peut être affiché (génère un ticket avec le modèle configuré). Les états GLPI à exclure sont paramétrables dans le widget.
+Page `usercard.php` â€” liste des Ã©quipements GLPI assignÃ©s Ã  l'utilisateur. Un bouton Â« Demander une mise Ã  jour Â» peut Ãªtre affichÃ© (gÃ©nÃ¨re un ticket avec le modÃ¨le configurÃ©). Les Ã©tats GLPI Ã  exclure sont paramÃ©trables dans le widget.
 
 ### 6.8 Mes applications
 
-Rubrique « Mes applications » — liste des applications GLPI (`Appliance`) liées à l'utilisateur via le mécanisme `ApplianceLink`.
+Rubrique Â« Mes applications Â» â€” liste des applications GLPI (`Appliance`) liÃ©es Ã  l'utilisateur via le mÃ©canisme `ApplianceLink`.
 
-### 6.9 Préférences utilisateur
+### 6.9 PrÃ©fÃ©rences utilisateur
 
-Page `preference.php` — formulaire de mise à jour des informations personnelles (nom, e-mail, téléphone). Si un modèle de ticket est configuré, la modification génère une demande de ticket au lieu d'une modification directe.
+Page `preference.php` â€” formulaire de mise Ã  jour des informations personnelles (nom, e-mail, tÃ©lÃ©phone). Si un modÃ¨le de ticket est configurÃ©, la modification gÃ©nÃ¨re une demande de ticket au lieu d'une modification directe.
 
 ---
 
@@ -477,56 +469,56 @@ Page `preference.php` — formulaire de mise à jour des informations personnelles 
 
 La barre de navigation du portail remplace la barre helpdesk GLPI standard.
 
-### 7.1 Structure par défaut
+### 7.1 Structure par dÃ©faut
 
-| Secteur | Éléments |
+| Secteur | Ã‰lÃ©ments |
 |---|---|
 | **Accueil** | Page d'accueil du portail |
-| **Tickets** | Créer un incident (si droit `plugin_servicecatalog_incidents`) |
-| **Tickets** | Créer une demande (si droit `plugin_servicecatalog_requests`) |
+| **Tickets** | CrÃ©er un incident (si droit `plugin_servicecatalog_incidents`) |
+| **Tickets** | CrÃ©er une demande (si droit `plugin_servicecatalog_requests`) |
 | **Aide** | FAQ, base documentaire |
-| **Autres** | Liens utiles, réservations, liens directs, mes équipements, mes applications, préférences, plugins tiers |
+| **Autres** | Liens utiles, rÃ©servations, liens directs, mes Ã©quipements, mes applications, prÃ©fÃ©rences, plugins tiers |
 
 ### 7.2 Personnalisation
 
-- **Titres et icônes** : configurables par widget dans l'onglet Widgets
-- **Ordre** : configurable par glisser-déposer dans l'onglet Ordre du menu
-- **Visibilité** : chaque élément peut être masqué via son widget
+- **Titres et icÃ´nes** : configurables par widget dans l'onglet Widgets
+- **Ordre** : configurable par glisser-dÃ©poser dans l'onglet Ordre du menu
+- **VisibilitÃ©** : chaque Ã©lÃ©ment peut Ãªtre masquÃ© via son widget
 
 ---
 
 ## 8. Favoris
 
-Les utilisateurs peuvent marquer des catégories ITIL comme favorites (étoile sur la tuile).
+Les utilisateurs peuvent marquer des catÃ©gories ITIL comme favorites (Ã©toile sur la tuile).
 
 - **Affichage** : section prioritaire sur la page d'accueil du portail
-- **Portée** : personnalisable par utilisateur, par groupe (`Favorite_Group`) ou par profil (`Favorite_Profile`)
+- **PortÃ©e** : personnalisable par utilisateur, par groupe (`Favorite_Group`) ou par profil (`Favorite_Profile`)
 - **Menu haut** : option pour afficher les favoris dans la barre de navigation haut
 
 ---
 
 ## 9. Moteur de recherche fuzzy
 
-Le plugin intègre [Fuse.js](https://fusejs.io/) pour une recherche instantanée et tolérante aux fautes.
+Le plugin intÃ¨gre [Fuse.js](https://fusejs.io/) pour une recherche instantanÃ©e et tolÃ©rante aux fautes.
 
 ### 9.1 Sources de recherche
 
-| Source | Contenu indexé |
+| Source | Contenu indexÃ© |
 |---|---|
-| Catégories ITIL | Nom, description, mots-clés |
-| Articles FAQ | Titre, contenu, résumé |
+| CatÃ©gories ITIL | Nom, description, mots-clÃ©s |
+| Articles FAQ | Titre, contenu, rÃ©sumÃ© |
 | API externe | Contenu Drupal ou BookStack |
 
 ### 9.2 Modes de recherche
 
-- **Fuzzy** (par défaut) : trouve les résultats proches même sans correspondance exacte
+- **Fuzzy** (par dÃ©faut) : trouve les rÃ©sultats proches mÃªme sans correspondance exacte
 - **Strict** : correspondance exacte uniquement (option `Recherche stricte`)
 
 ### 9.3 Clients API externes
 
 Chemin : `Configuration > Plugins > Service catalog > onglet Clients API`
 
-Deux types de sources externes sont supportées :
+Deux types de sources externes sont supportÃ©es :
 
 | Type | Protocole |
 |---|---|
@@ -535,32 +527,32 @@ Deux types de sources externes sont supportées :
 
 ---
 
-## 10. Gestion par entité
+## 10. Gestion par entitÃ©
 
-Un onglet **Service catalog** est ajouté sur chaque fiche Entité GLPI.
+Un onglet **Service catalog** est ajoutÃ© sur chaque fiche EntitÃ© GLPI.
 
 | Contenu | Description |
 |---|---|
-| Images et logos spécifiques | En-tête et logo propres à cette entité dans le portail |
+| Images et logos spÃ©cifiques | En-tÃªte et logo propres Ã  cette entitÃ© dans le portail |
 | Options d'affichage | Surcharges des options d'affichage globales |
-| Tableau de bord (onglet Dashboard) | Vue par défaut du portail pour cette entité, par profil |
+| Tableau de bord (onglet Dashboard) | Vue par dÃ©faut du portail pour cette entitÃ©, par profil |
 
 ---
 
-## 11. Intégration MyDashboard
+## 11. IntÃ©gration MyDashboard
 
 Lorsque le plugin MyDashboard est actif, Service Catalog contribue un widget **Indicateurs** dans le tableau de bord MyDashboard.
 
 Ce widget affiche :
 - Tickets ouverts par l'utilisateur
-- Tickets en attente (selon la raison d'en attente configurée)
+- Tickets en attente (selon la raison d'en attente configurÃ©e)
 - Tickets en attente de validation
 
 ---
 
-## 12. Intégration avec les formulaires GLPI natifs
+## 12. IntÃ©gration avec les formulaires GLPI natifs
 
-Un onglet **Service catalog** est ajouté sur chaque formulaire GLPI natif (Forms GLPI 11). Il permet d'exposer un formulaire natif comme point d'entrée d'une catégorie du portail.
+Un onglet **Service catalog** est ajoutÃ© sur chaque formulaire GLPI natif (Forms GLPI 11). Il permet d'exposer un formulaire natif comme point d'entrÃ©e d'une catÃ©gorie du portail.
 
 ---
 
@@ -569,33 +561,33 @@ Un onglet **Service catalog** est ajouté sur chaque formulaire GLPI natif (Forms
 ### 13.1 Configuration initiale
 
 1. Aller dans `Configuration > Plugins > Service catalog`
-2. Choisir un **layout** adapté (recommandé : `glpi11` pour une intégration moderne)
-3. Définir les **couleurs** selon la charte graphique de votre organisation
-4. Configurer le **modèle de ticket par défaut** pour les incidents et les demandes
-5. Activer la **barre de recherche** si l'arborescence de catégories est large
+2. Choisir un **layout** adaptÃ© (recommandÃ© : `glpi11` pour une intÃ©gration moderne)
+3. DÃ©finir les **couleurs** selon la charte graphique de votre organisation
+4. Configurer le **modÃ¨le de ticket par dÃ©faut** pour les incidents et les demandes
+5. Activer la **barre de recherche** si l'arborescence de catÃ©gories est large
 
-### 13.2 Gestion des catégories
+### 13.2 Gestion des catÃ©gories
 
-1. Créer les catégories ITIL dans `Assistance > Catégories ITIL`
-2. Sur chaque catégorie, aller dans l'onglet **Service catalog** pour ajouter une image, une icône, une couleur et une description
-3. Activer `is_helpdeskvisible` sur la catégorie ITIL pour qu'elle apparaisse dans le portail
-4. Utiliser l'**Ordre des catégories** pour prioriser les catégories les plus utilisées
+1. CrÃ©er les catÃ©gories ITIL dans `Assistance > CatÃ©gories ITIL`
+2. Sur chaque catÃ©gorie, aller dans l'onglet **Service catalog** pour ajouter une image, une icÃ´ne, une couleur et une description
+3. Activer `is_helpdeskvisible` sur la catÃ©gorie ITIL pour qu'elle apparaisse dans le portail
+4. Utiliser l'**Ordre des catÃ©gories** pour prioriser les catÃ©gories les plus utilisÃ©es
 
 ### 13.3 Gestion des droits
 
-1. Attribuer `plugin_servicecatalog` (READ) à tous les profils qui doivent accéder au portail
-2. Attribuer `plugin_servicecatalog_incidents` et/ou `plugin_servicecatalog_requests` selon les types de tickets autorisés
-3. Réserver `plugin_servicecatalog_setup` (UPDATE) aux administrateurs uniquement
+1. Attribuer `plugin_servicecatalog` (READ) Ã  tous les profils qui doivent accÃ©der au portail
+2. Attribuer `plugin_servicecatalog_incidents` et/ou `plugin_servicecatalog_requests` selon les types de tickets autorisÃ©s
+3. RÃ©server `plugin_servicecatalog_setup` (UPDATE) aux administrateurs uniquement
 
 ### 13.4 Performance
 
-> Le plugin met en cache la liste des catégories pendant **3600 secondes**. Toute modification d'une catégorie ITIL ou d'une catégorie Service Catalog invalide automatiquement ce cache. En cas de doute, utilisez les **Outils** dans la configuration du plugin pour forcer la réinitialisation du cache.
+> Le plugin met en cache la liste des catÃ©gories pendant **3600 secondes**. Toute modification d'une catÃ©gorie ITIL ou d'une catÃ©gorie Service Catalog invalide automatiquement ce cache. En cas de doute, utilisez les **Outils** dans la configuration du plugin pour forcer la rÃ©initialisation du cache.
 
-### 13.5 Multi-entité
+### 13.5 Multi-entitÃ©
 
-- Configurez une vue par défaut du portail par entité via l'onglet **Tableau de bord** sur la fiche Entité
-- Les logos et images peuvent être surchargés par entité via l'onglet **Service catalog** de l'entité
+- Configurez une vue par dÃ©faut du portail par entitÃ© via l'onglet **Tableau de bord** sur la fiche EntitÃ©
+- Les logos et images peuvent Ãªtre surchargÃ©s par entitÃ© via l'onglet **Service catalog** de l'entitÃ©
 
 ---
 
-*Documentation générée pour Service Catalog v3.0.4 — GLPI 11.x*
+*Documentation gÃ©nÃ©rÃ©e pour Service Catalog v3.0.4 â€” GLPI 11.x*
